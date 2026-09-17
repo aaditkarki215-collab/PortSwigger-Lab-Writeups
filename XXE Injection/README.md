@@ -136,6 +136,6 @@ When the entity is referenced (`&xxe;`), the parser fetches the content of the e
 ## Labs in this Section
 
 - [Exploiting XXE using external entities to retrieve files](01-Exploiting-XEE-to-retrive-files.md)
-- [Exploiting XXE to perform SSRF attacks](Exploiting XXE to perform SSRF attacks.md)
+- [Exploiting XXE to perform SSRF attacks](02-Exploiting-XXE-to-perform-SSRF-attacks.md)
 ```
 
