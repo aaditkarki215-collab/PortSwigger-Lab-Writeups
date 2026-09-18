@@ -19,13 +19,12 @@ Because of this, the normal Blind XXE payload (using a normal external entity) d
 
 **Goal:** Use an **XML parameter entity** to trigger a DNS lookup and HTTP request to Burp Collaborator.
 
-!image.png![alt text](4.1.png)
-
+![alt text](images/4.1.png)
 ---
 
-!image.png![alt text](4.2.png)
+![alt text](images/4.2.png)
 
-!image.png![alt text](4.3.png)
+![alt text](images/4.3.png)
 
 ### What I Tried First (Didn’t Work)
 
@@ -49,11 +48,11 @@ I first tried the normal external entity payload:
 
 This confirmed that the application is blocking normal external entities.
 
-!image.png![alt text](4.4.png)
+![alt text](images/4.4.png)
 
 ---
 
-!image.png![alt text](4.5.png)
+![alt text](images/4.5.png)
 
 ### Solution: Using Parameter Entities
 
@@ -75,10 +74,9 @@ Since normal entities were blocked, I switched to **XML Parameter Entities** (de
 
 ---
 
-!image.png![alt text](images/4.6.png)
+![alt text](images/4.6.png)
 
-!image.png![alt text](images
-/4.7.png)
+![alt text](images/4.7.png)
 
 ### What Happened
 
@@ -88,7 +86,7 @@ Since normal entities were blocked, I switched to **XML Parameter Entities** (de
 
 This proved that the parameter entity was successfully processed by the XML parser and triggered an out-of-band request.
 
-![alt text](4.8.png)
+![alt text](images/4.8.png)
 
 ---
 
